@@ -6,6 +6,6 @@ We aim to develop a online Stock Simulator that can allow users to buy and sell 
 Branch Directory:<br />
 Permanent Branches: <br />
     *Development Branch (Testing new functions implemented into the build): https://github.com/walper/CIS454-investmentWeb/blob/Development/README.md*<br />
-  Temporary Branches: <br />
+Temporary Branches: <br />
     Login: 
 </pre>
