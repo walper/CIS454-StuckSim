@@ -1,2 +1,3 @@
 # CIS454-investo
-A repository for Class Project 
+
+This branch is for the development phasse of the project. All testing implementations go here. 
