@@ -1,4 +1,4 @@
-# CIS454 - StockSim 
+# CIS454 - StuckSim 
 ### This is the repository for CIS 454 StockSim Project by Chih-Chia Chen, Dayong Gu, Haochen Lin, David Liu, Yiming Zhou ###
 ![alt text](https://github.com/walper/CIS454-StuckSim/blob/Production/images/logo.png)
 ![alt text](https://github.com/walper/CIS454-StuckSim/blob/Production/images/22cb96158d73f53cce2027d63d70fb6.png)
