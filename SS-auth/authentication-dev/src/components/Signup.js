@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 export default function Signup() {
@@ -12,14 +12,14 @@ export default function Signup() {
     const { signup } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
+    const navigate = useNavigate()
 
     async function handleSubmit(event){
 
-        event.preventDefault() //prevent form from refreshing
+        event.preventDefault() //prevent the form from refreshing when not wanted
 
         if(passwordRef.current.value !==
             passwordConfirmRef.current.value){
-                
             return setError('Passwords do not match')
         }
 
@@ -28,7 +28,7 @@ export default function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-
+            navigate("/Dashboard")
         } catch {
 
             setError('Failed to create an account')

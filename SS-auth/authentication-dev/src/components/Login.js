@@ -24,10 +24,10 @@ export default function Login() {
             setError('')
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
-            navigate("/")
+            navigate("/Dashboard")
         } catch {
 
-            setError('Failed to sign in')
+            setError('Failed to log in')
 
         }
         setLoading(false)
@@ -54,9 +54,12 @@ export default function Login() {
 
                 <Button disabled={loading} className="w-100" type="submit">
                     Login
-                    </Button>
-                
+                </Button>
+
              </Form>
+             <div className="w-100 text-center mt-3">
+                <Link to="/pw-recovery">Forgot Password?</Link>
+            </div>
 
          </Card.Body>
 
