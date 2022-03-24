@@ -6,3 +6,10 @@
 #### Branch Directory ####
 
 [Development Branch](https://github.com/walper/CIS454-investmentWeb/blob/Development/README.md "Go to Development Branch")
+
+#### Django
+
+1. command line cd into directory django/stocks <br/>
+2. pip install virtualenv <br/>
+3. source venv/bin/activate <br/>
+4. to run server: ./manage.py runserver <br/>
