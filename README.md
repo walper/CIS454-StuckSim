@@ -12,4 +12,5 @@
 1. command line cd into directory django/stocks <br/>
 2. pip install virtualenv <br/>
 3. source venv/bin/activate <br/>
-4. to run server: ./manage.py runserver <br/>
+4. install all python dependencies from list requirements.txt <br/>
+5. to run server: ./manage.py runserver <br/>
