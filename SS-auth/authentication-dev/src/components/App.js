@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Signup from './Signup'
 import Dashboard from './Dashboard'
 import Login from './Login'
-import Homepage from './Homepage'
 import PrivateRoute from './PrivateRoute'
 import ForgotPassword from './ForgotPassword'
 import UpdateProfile from './UpdateProfile'
@@ -29,12 +28,11 @@ function App() {
              */} 
              <Routes>
 
-              <Route exact path="/" element={ <Homepage/> }/>
               
               {/* 
                 private routing needs to be wrapped, else error
               */}
-              <Route path="/dashboard" 
+              <Route exact path="/" 
                       element={ <PrivateRoute>
                         <Dashboard/>
                       </PrivateRoute>}
