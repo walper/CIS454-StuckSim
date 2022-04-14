@@ -39,7 +39,6 @@ export function AuthProvider({ children }) {
     function updateEmail(email){
         currentUser.updateEmail(email)
     }
-
     function updatePassword(password){
         currentUser.updatePassword(password)
     }

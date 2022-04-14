@@ -17,7 +17,7 @@ export default function Login() {
 
     async function handleSubmit(event){
 
-        event.preventDefault() //prevent form from refreshing
+        event.preventDefault() //prevent page form from refreshing
 
         try{
 
@@ -27,7 +27,7 @@ export default function Login() {
             navigate("/")
         } catch {
 
-            setError('Failed to log in')
+            setError('Failed to log in, please try again')
 
         }
         setLoading(false)
@@ -36,10 +36,8 @@ export default function Login() {
   return (
     <>
      <card>
-
          <Card.Body>
-            
-            <h2 className="text-center mb-4">Log in</h2>
+            <h2 className="text-center mb-4">StockSim Login</h2>
             {error && <Alert variant="danger">{error}</Alert>}
             <Form onSubmit={handleSubmit}>
                 <Form.Group id="email">
